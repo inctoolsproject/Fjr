@@ -10,31 +10,31 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #ANTIJS_V2
-cl = LineClient(authToken='Ex1Vpvf8kXF8Vsh2QBl8.wb+1x+ATrwACcZUumYsSUa.gXKufDfv/XL9vy2l0LE8fR5AyEwRLoGwpW7Zm1V29WI=')
+cl = LineClient(authToken='ExyshgSdI51DBdn0YK58.yAM1ZO3J61gOwuemMdtLYa.h3LcaYCafhCtGUe0GFkgM/30PtAevqTlm66g4nXewHc=')
 #cl = LineClient(authToken='ISI TOKENMU  DISINI')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='Ex3pmvuUrEpswooU2nT9.hBhkoFGOWq2ca/v2aGDfkq.1VJpoqB0Aywkghw4NJi/gm/KuxC7YgmNA9Ju7qQiCIs=')
+ki = LineClient(authToken='ExXxSRXFCo9kfAaFDg5d.mKZbV5HoQB+/lk9EZno5+q.OrYKFSNQvNEm6l548ggLciNVJAf4IsmCXihnESEJYsE=')
 #ki = LineClient(authToken='ISI TOKENMU  DISINI')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='Exo0jDDSakok4HT28T0f.SrrNO62JoBMwTM0dc/1lxW.HneN2brqUNptsmPKd/42CMCsRY53rEoLacKfQPCU+Wg=')
+kk = LineClient(authToken='ExdPY9ErgHtCyBn2tQDc.16TgKHOKEZdzbqSPFT9+pa.BmGINQY/887WsjomzdXDr8r0h5c7txkcgIT4qpwdGYs=')
 #kk = LineClient(authToken='ISI TOKENMU  DISINI')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='Ex0vvhV5kUwT3Fje5oRc.RjjX/PW5a9d/mkreQyncZa.Fz3TUutRnI5pgp/HhxMDfG7Fc6Jfm+4YXY3vkXhAX5E=')
+kc = LineClient(authToken='Exj9TsiZQtsFAv4a0pJ7.9JEdd8ZTx6V8TnFFP76r5W.uVMn/dbPxW/UfliLUs06aCoyBalhgd8JrScXp1C324o=')
 #kc = LineClient(authToken='ISI TOKENMU  DISINI')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient(authToken='ExmcTkHVcFHukXPkXPlf./JXwkfp+u4nfpiyYCt3rhW.KZsKzmldw3iEACRmBQ63SiIoL/WAKwAW7VVJplvmmNk=')
+sw = LineClient(authToken='Exxzf5R2UFXzz3r5SRGf.8xqyonc7QGpg4SKhcRUsVW.xe+G650KwlL5kJ+1D148N7ptIqweKhhDwnMTMUMr7cM=')
 #sw = LineClient(authToken='ISI TOKENMU  DISINI')
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
@@ -42,10 +42,10 @@ sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = cl
-creator = ["u9f09cfcb17d037e2936b751bd9d40ead"]
-owner = ["u9f09cfcb17d037e2936b751bd9d40ead"]
-admin = ["u9f09cfcb17d037e2936b751bd9d40ead"]
-staff = ["u9f09cfcb17d037e2936b751bd9d40ead"]
+creator = ["u61a9b5ce8de3eb51a859410c9834e5c8"]
+owner = ["u61a9b5ce8de3eb51a859410c9834e5c8"]
+admin = ["u61a9b5ce8de3eb51a859410c9834e5c8"]
+staff = ["u61a9b5ce8de3eb51a859410c9834e5c8"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -54,7 +54,7 @@ Zmid = sw.getProfile().mid
 KAC = [cl,ki,kk,kc]
 ABC = [ki,kk,kc]
 Bots = [mid,Amid,Bmid,Cmid,Zmid]
-Dpk = admin + staff
+Delta = admin + staff
 
 protectqr = []
 protectkick = []
@@ -66,9 +66,11 @@ ghost = []
 
 welcome = []
 
-responsename1 = ki.getProfile().displayName
-responsename2 = kk.getProfile().displayName
+responsename1 = cl.getProfile().displayName
+responsename2 = ki.getProfile().displayName
 responsename3 = kc.getProfile().displayName
+responsename4 = kk.getProfile().displayName
+responsename5 = sw.getProfile().displayName
 
 settings = {
     "Picture":False,
@@ -129,11 +131,11 @@ wait = {
     "welcomeOn":False,
     "sticker":False,
     "selfbot":True,
-    "mention":"SINI KAK GABUNG CHAT AJA 😊",
+    "mention":"masuk ka..",
     "Respontag":"Hadir bosss",
-    "welcome":"Selamat datang & betah",
+    "welcome":"Selamat datang",
     "comment":"Like like & like by sepriche",
-    "message":"Terimakasih sudah add saya 😃",
+    "message":"Terimakasih sudah add ",
     }
 
 read = {
@@ -352,8 +354,8 @@ def help():
                   "❂-➣" + key + "Spamtag「@」\n" + \
                   "❂-➣" + key + "Spamcall:「jumlahnya」\n" + \
                   "❂-➣" + key + "Spamcall\n" + \
-                  "❂-➣" + key + "Notag「on/off」\n" + \
-                  "❂-➣" + key + "Semuapro「on/off」\n" + \
+                  "❂-➣" + key + "Warmode「on/off」\n" + \
+                  "❂-➣" + key + "Protectinvite「on/off」\n" + \
                   "❂-➣" + key + "Protecturl「on/off」\n" + \
                   "❂-➣" + key + "Protectjoin「on/off」\n" + \
                   "❂-➣" + key + "Protectkick「on/off」\n" + \
@@ -510,11 +512,11 @@ def bot(op):
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        cl.sendMessage(msg.to,"􀠁􀄽􏿿 " )
                     else:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Haii " + str(ginfo.name))
+                        cl.sendMessage(msg.to,"􀠁􀄽􏿿 " )
             if Amid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
@@ -525,7 +527,7 @@ def bot(op):
                     else:
                         ki.acceptGroupInvitation(op.param1)
                         ginfo = ki.getGroup(op.param1)
-                        ki.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        ki.sendMessage(msg.to,"􀠁􀄽􏿿 " )
             if Bmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
@@ -536,7 +538,7 @@ def bot(op):
                     else:
                         kk.acceptGroupInvitation(op.param1)
                         ginfo = kk.getGroup(op.param1)
-                        kk.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        kk.sendMessage(msg.to,"􀠁􀄽􏿿 " )
             if Cmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
@@ -547,7 +549,7 @@ def bot(op):
                     else:
                         kc.acceptGroupInvitation(op.param1)
                         ginfo = kc.getGroup(op.param1)
-                        kc.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        kc.sendMessage(msg.to,"􀠁􀄽􏿿 " )
 
         if op.type == 13:
             if op.param1 in protectinvite:
@@ -646,9 +648,14 @@ def bot(op):
                         Ticket = cl.reissueGroupTicket(op.param1)
                         sw.acceptGroupInvitationByTicket(op.param1,Ticket)
                         sw.kickoutFromGroup(op.param1,[op.param2])
+                        sw.kickoutFromGroup(op.param1,[op.param2])
+                        sw.kickoutFromGroup(op.param1,[op.param2])
+                        sw.kickoutFromGroup(op.param1,[op.param2])
+                        sw.kickoutFromGroup(op.param1,[op.param2])
                         sw.leaveGroup(op.param1)
                         X = cl.getGroup(op.param1)
                         X.preventedJoinByTicket = True
+                        cl.updateGroup(X)
                         cl.updateGroup(X)
             except:
                 pass             
@@ -762,6 +769,7 @@ def bot(op):
                                     G.preventedJoinByTicket = False
                                     ki.kickoutFromGroup(op.param1,[op.param2])
                                     ki.updateGroup(G)
+                                    ki.updateGroup(G)
                                     Ticket = ki.reissueGroupTicket(op.param1)
                                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ki.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -769,6 +777,7 @@ def bot(op):
                                     kc.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     G = ki.getGroup(op.param1)
                                     G.preventedJoinByTicket = True
+                                    ki.updateGroup(G)
                                     ki.updateGroup(G)
                                     Ticket = ki.reissueGroupTicket(op.param1)
                                 except:
@@ -816,6 +825,7 @@ def bot(op):
                                     G.preventedJoinByTicket = False
                                     kk.kickoutFromGroup(op.param1,[op.param2])
                                     kk.updateGroup(G)
+                                    kk.updateGroup(G)
                                     Ticket = kk.reissueGroupTicket(op.param1)
                                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ki.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -823,6 +833,7 @@ def bot(op):
                                     kc.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     G = kk.getGroup(op.param1)
                                     G.preventedJoinByTicket = True
+                                    kk.updateGroup(G)
                                     kk.updateGroup(G)
                                     Ticket = kk.reissueGroupTicket(op.param1)
                                 except:
@@ -870,6 +881,7 @@ def bot(op):
                                     G.preventedJoinByTicket = False
                                     kc.kickoutFromGroup(op.param1,[op.param2])
                                     kc.updateGroup(G)
+                                    kc.updateGroup(G)
                                     Ticket = kc.reissueGroupTicket(op.param1)
                                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ki.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -877,6 +889,7 @@ def bot(op):
                                     kc.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     G = kc.getGroup(op.param1)
                                     G.preventedJoinByTicket = True
+                                    kc.updateGroup(G)
                                     kc.updateGroup(G)
                                     Ticket = kc.reissueGroupTicket(op.param1)
                                 except:
@@ -924,6 +937,7 @@ def bot(op):
                                     G.preventedJoinByTicket = False
                                     cl.kickoutFromGroup(op.param1,[op.param2])
                                     cl.updateGroup(G)
+                                    cl.updateGroup(G)
                                     Ticket = cl.reissueGroupTicket(op.param1)
                                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ki.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -931,6 +945,7 @@ def bot(op):
                                     kc.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     G = cl.getGroup(op.param1)
                                     G.preventedJoinByTicket = True
+                                    cl.updateGroup(G)
                                     cl.updateGroup(G)
                                     Ticket = cl.reissueGroupTicket(op.param1)
                                 except:
@@ -1113,54 +1128,54 @@ def bot(op):
                  if msg._from in admin:
                   if wait["addbots"] == True:
                     if msg.contentMetadata["mid"] in Bots:
-                        cl.sendMessage(msg.to,"Contact itu sudah jadi anggota bot")
+                        cl.sendMessage(msg.to,"Contact itu sudah jadi anggota ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                         wait["addbots"] = True
                     else:
                         Bots.append(msg.contentMetadata["mid"])
                         wait["addbots"] = True
-                        cl.sendMessage(msg.to,"Berhasil menambahkan ke anggota bot")
+                        cl.sendMessage(msg.to,"Berhasil menambahkan ke anggota ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                  if wait["dellbots"] == True:
                     if msg.contentMetadata["mid"] in Bots:
                         Bots.remove(msg.contentMetadata["mid"])
-                        cl.sendMessage(msg.to,"Berhasil menghapus dari anggota bot")
+                        cl.sendMessage(msg.to,"Berhasil menghapus dari anggota ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                     else:
                         wait["dellbots"] = True
-                        cl.sendMessage(msg.to,"Contact itu bukan anggota bot Dpk")
+                        cl.sendMessage(msg.to,"Contact itu bukan anggota ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
 #ADD STAFF
                  if msg._from in admin:
                   if wait["addstaff"] == True:
                     if msg.contentMetadata["mid"] in staff:
-                        cl.sendMessage(msg.to,"Contact itu sudah jadi staff")
+                        cl.sendMessage(msg.to,"Contact itu sudah jadi staff ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                         wait["addstaff"] = True
                     else:
                         staff.append(msg.contentMetadata["mid"])
                         wait["addstaff"] = True
-                        cl.sendMessage(msg.to,"Berhasil menambahkan ke staff")
+                        cl.sendMessage(msg.to,"Berhasil menambahkan ke staff ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                  if wait["dellstaff"] == True:
                     if msg.contentMetadata["mid"] in staff:
                         staff.remove(msg.contentMetadata["mid"])
-                        cl.sendMessage(msg.to,"Berhasil menghapus dari staff")
+                        cl.sendMessage(msg.to,"Berhasil menghapus dari staff ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                         wait["dellstaff"] = True
                     else:
                         wait["dellstaff"] = True
-                        cl.sendMessage(msg.to,"Contact itu bukan staff")
+                        cl.sendMessage(msg.to,"Contact itu bukan staff ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
 #ADD ADMIN
                  if msg._from in admin:
                   if wait["addadmin"] == True:
                     if msg.contentMetadata["mid"] in admin:
-                        cl.sendMessage(msg.to,"Contact itu sudah jadi admin")
+                        cl.sendMessage(msg.to,"Contact itu sudah jadi admin ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                         wait["addadmin"] = True
                     else:
                         admin.append(msg.contentMetadata["mid"])
                         wait["addadmin"] = True
-                        cl.sendMessage(msg.to,"Berhasil menambahkan ke admin")
+                        cl.sendMessage(msg.to,"Berhasil menambahkan ke admin ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                  if wait["delladmin"] == True:
                     if msg.contentMetadata["mid"] in admin:
                         admin.remove(msg.contentMetadata["mid"])
-                        cl.sendMessage(msg.to,"Berhasil menghapus dari admin")
+                        cl.sendMessage(msg.to,"Berhasil menghapus dari admin ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                     else:
                         wait["delladmin"] = True
-                        cl.sendMessage(msg.to,"Contact itu bukan admin")
+                        cl.sendMessage(msg.to,"bukan admin ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
 #ADD BLACKLIST
                  if msg._from in admin:
                   if wait["wblacklist"] == True:
@@ -1298,15 +1313,13 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "❂-➣SEPRICHE\n"
-                                if wait["sticker"] == True: md+="❂-➣Sticker「ON」\n"
-                                else: md+="❂-➣Sticker「OFF」\n"
+                                md = "  ☣━━━━━━━━━━━━━━━☣\n         ✯卍 S T A T U S 卍✯\n☣━━━━━━━━━━━━━━━☣\n"
+                                if wait["sticker"] == True: md+="❂-➣STC「ON」\n"
+                                else: md+="❂-➣STC「OFF」\n"
                                 if wait["contact"] == True: md+="❂-➣Contact「ON」\n"
                                 else: md+="❂-➣Contact「OFF」\n"
                                 if wait["talkban"] == True: md+="❂-➣Talkban「ON」\n"
                                 else: md+="❂-➣Talkban「OFF」\n"
-                                if wait["Mentionkick"] == True: md+="❂-➣Notag「ON」\n"
-                                else: md+="❂-➣Notag「OFF」\n"
                                 if wait["detectMention"] == True: md+="❂-➣Respon「ON」\n"
                                 else: md+="❂-➣Respon「OFF」\n"
                                 if wait["autoJoin"] == True: md+="❂-➣Autojoin「ON」\n"
@@ -1323,13 +1336,17 @@ def bot(op):
                                 else: md+="❂-➣Protectjoin「OFF」\n"
                                 if msg.to in protectkick: md+="❂-➣Protectkick「ON」\n"
                                 else: md+="❂-➣Protectkick「OFF」\n"
+                                if msg.to in protectinvite: md+="❂-➣Protectinvite「ON」\n"
+                                else: md+="❂-➣Protectinvite「OFF」\n"
                                 if msg.to in protectcancel: md+="❂-➣Protectcancel「ON」\n"
                                 else: md+="❂-➣Protectcancel「OFF」\n"
+                                if wait["Mentionkick"] == True: md+="❂-➣WARmode「ON」\n"
+                                else: md+="❂-➣WARmode「OFF」\n"
                                 if msg.to in protectantijs: md+="❂-➣Antijs「ON」\n"
                                 else: md+="❂-➣Antijs「OFF」\n"  
                                 if msg.to in ghost: md+="❂-➣Ghost「ON」\n"
                                 else: md+="❂-➣Ghost「OFF」\n"                                   
-                                cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
+                                cl.sendMessage(msg.to, md+"☣━━━━━━━━━━━━━━━☣\n™卍ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ卍\n卍Kicker  and  Protect卍\n  ☣━━━━━━━━━━━━━━━☣")
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
@@ -1379,6 +1396,26 @@ def bot(op):
                                else:
                                    cl.sendImageWithURL(msg.to, 'http://dl.profile.line.naver.jp'+str(mi.picturePath))
 
+                        elif 'Protectinvite ' in msg.text:
+                           if msg._from in admin:
+                              spl = msg.text.replace('Protectinvite ','')
+                              if spl == 'on':
+                                  if msg.to in protectinvite:
+                                       msgs = "Protect invite sudah aktif"
+                                  else:
+                                       protectinvite.append(msg.to)
+                                       ginfo = cl.getGroup(msg.to)
+                                       msgs = "Protect invite diaktifkan\nDi Group : " +str(ginfo.name)
+                                  cl.sendMessage(msg.to, "「Diaktifkan」\n" + msgs)
+                              elif spl == 'off':
+                                    if msg.to in protectinvite:
+                                         protectinvite.remove(msg.to)
+                                         ginfo = cl.getGroup(msg.to)
+                                         msgs = "Protect invite dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                    else:
+                                         msgs = "Protect invite sudah tidak aktif"
+                                    cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)                                                 
+                        
                         elif cmd == "mybot":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -1480,7 +1517,7 @@ def bot(op):
                                     gTicket = "https://line.me/R/ti/g/{}".format(str(cl.reissueGroupTicket(G.id)))
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
-                                cl.sendMessage(msg.to, "❂-➣Sepri Fams Grup Info\n\n❂-➣Nama Group : {}".format(G.name)+ "\n❂-➣ID Group : {}".format(G.id)+ "\n❂-➣Pembuat : {}".format(G.creator.displayName)+ "\n❂-➣Waktu Dibuat : {}".format(str(timeCreated))+ "\n❂-➣Jumlah Member : {}".format(str(len(G.members)))+ "\n❂-➣Jumlah Pending : {}".format(gPending)+ "\n❂-➣Group Qr : {}".format(gQr)+ "\n❂-➣Group Ticket : {}".format(gTicket))
+                                cl.sendMessage(msg.to, "❂-➣ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ Info\n\n❂-➣Nama Group : {}".format(G.name)+ "\n❂-➣ID Group : {}".format(G.id)+ "\n❂-➣Pembuat : {}".format(G.creator.displayName)+ "\n❂-➣Waktu Dibuat : {}".format(str(timeCreated))+ "\n❂-➣Jumlah Member : {}".format(str(len(G.members)))+ "\n❂-➣Jumlah Pending : {}".format(gPending)+ "\n❂-➣Group Qr : {}".format(gQr)+ "\n❂-➣Group Ticket : {}".format(gTicket))
                                 cl.sendMessage(msg.to, None, contentMetadata={'mid': G.creator.mid}, contentType=13)
                                 cl.sendImageWithURL(msg.to, 'http://dl.profile.line-cdn.net/'+G.pictureStatus)
                             except Exception as e:
@@ -1511,7 +1548,7 @@ def bot(op):
                                     gTicket = "https://line.me/R/ti/g/{}".format(str(cl.reissueGroupTicket(G.id)))
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
-                                ret_ += "❂-➣ĐPĶ Fams Grup Info\n"
+                                ret_ += "❂-➣ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ Grup Info\n"
                                 ret_ += "\n❂-➣Nama Group : {}".format(G.name)
                                 ret_ += "\n❂-➣ID Group : {}".format(G.id)
                                 ret_ += "\n❂-➣Pembuat : {}".format(gCreator)
@@ -1772,7 +1809,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"❂-➣ĐPĶ  bot\n\n"+ma+"\nTotal「%s」 Bots" %(str(len(Bots))))
+                                cl.sendMessage(msg.to,"❂-➣ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ\n\n"+ma+"\nTotal「%s」 Bots" %(str(len(Bots))))
 
                         elif cmd == "listadmin":
                           if wait["selfbot"] == True:
@@ -1795,7 +1832,7 @@ def bot(op):
                                     c = c + 1
                                     end = '\n'
                                     mc += str(c) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"❂-➣Sepri  admin\n\nSuper admin:\n"+ma+"\nAdmin:\n"+mb+"\nStaff:\n"+mc+"\nTotal「%s」 Dpk" %(str(len(owner)+len(admin)+len(staff))))
+                                cl.sendMessage(msg.to,"❂-➣ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ\n\nSuper admin:\n"+ma+"\nAdmin:\n"+mb+"\nStaff:\n"+mc+"\nTotal「%s」 Delta" %(str(len(owner)+len(admin)+len(staff))))
 
                         elif cmd == "listprotect":
                           if wait["selfbot"] == True:
@@ -1828,14 +1865,16 @@ def bot(op):
                                     c = c + 1
                                     end = '\n'
                                     mc += str(c) + ". " +cl.getGroup(group).name + "\n"
-                                cl.sendMessage(msg.to,"❂-➣Sepri Fams Protection\n\n❂-➣PROTECT URL :\n"+ma+"\n❂-➣PROTECT KICK :\n"+mb+"\n❂-➣PROTECT JOIN :\n"+md+"\n❂-➣PROTECT CANCEL:\n"+mc+"\nTotal「%s」Grup yg dijaga" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel))))
+                                cl.sendMessage(msg.to,"❂-➣ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ\n\n❂-➣PROTECT URL :\n"+ma+"\n❂-➣PROTECT KICK :\n"+mb+"\n❂-➣PROTECT JOIN :\n"+md+"\n❂-➣PROTECT CANCEL:\n"+mc+"\n❂-➣PROTECT INVITE:\n"+mc+"\nTotal「%s」Grup yg dijaga" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel)+len(protectcancel))))
 
                         elif cmd == "respon":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                                ki.sendMessage(msg.to,responsename1)
-                                kk.sendMessage(msg.to,responsename2)
+                                cl.sendMessage(msg.to,responsename1)
+                                ki.sendMessage(msg.to,responsename2)
                                 kc.sendMessage(msg.to,responsename3)
+                                kk.sendMessage(msg.to,responsename4)
+                                sw.sendMessage(msg.to,responsename5)
 
                         elif cmd == "invitebot":
                           if wait["selfbot"] == True:
@@ -1874,12 +1913,15 @@ def bot(op):
                                 G = kc.getGroup(msg.to)
                                 G.preventedJoinByTicket = True
                                 kc.updateGroup(G)
+                                ki.updateGroup(G)
+                                cl.updateGroup(G)
+                                kk.updateGroup(G)
 
                         elif cmd == "byeall":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
-                                ki.sendText(msg.to, "Bye bye fams "+str(G.name))
+                                ki.sendText(msg.to, "Bye all, salam santun dari ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ "+str(G.name))
                                 ki.leaveGroup(msg.to)
                                 kk.leaveGroup(msg.to)
                                 kc.leaveGroup(msg.to)
@@ -1888,7 +1930,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
-                                cl.sendText(msg.to, "Bye bye fams "+str(G.name))
+                                cl.sendText(msg.to, "ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ LEAVE "+str(G.name))
                                 cl.leaveGroup(msg.to)
 
                         elif cmd.startswith("leave "):
@@ -1956,6 +1998,8 @@ def bot(op):
                                 G = sw.getGroup(msg.to)
                                 G.preventedJoinByTicket = True
                                 sw.updateGroup(G)
+                                sw.updateGroup(G)
+                                sw.updateGroup(G)
 
                         elif cmd == "kicker bye":
                             if msg._from in admin:
@@ -1974,13 +2018,13 @@ def bot(op):
                                 get_contact_time_start = time.time()
                                 get_contact = cl.getContact(mid)
                                 get_contact_time = time.time() - get_contact_time_start
-                                cl.sendMessage(msg.to, "❂-➣Sepri Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
+                                cl.sendMessage(msg.to, "❂-➣ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
 
                         elif cmd == "speed" or cmd == "sp":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                start = time.time()
-                               cl.sendMessage(msg.to, "Progres speed...")
+                               cl.sendMessage(msg.to, "ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ speed...")
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
                                cl.sendMessage(msg.to, None, contentMetadata={"STKID":"51626512","STKPKGID":"11538","STKVER":"1"}, contentType=7)
@@ -2612,7 +2656,7 @@ def bot(op):
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
 
 #===========KICKOUT============#
-                        elif ("Nk " in msg.text):
+                        elif ("Santet " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2630,9 +2674,14 @@ def bot(op):
                                            Ticket = cl.reissueGroupTicket(msg.to)
                                            sw.acceptGroupInvitationByTicket(msg.to,Ticket)
                                            sw.kickoutFromGroup(msg.to, [target])
+                                           sw.kickoutFromGroup(msg.to, [target])
+                                           sw.kickoutFromGroup(msg.to, [target])
+                                           sw.kickoutFromGroup(msg.to, [target])
+                                           sw.kickoutFromGroup(msg.to, [target])
                                            sw.leaveGroup(msg.to)
                                            X = cl.getGroup(msg.to)
                                            X.preventedJoinByTicket = True
+                                           cl.updateGroup(X)
                                            cl.updateGroup(X)
                                        except:
                                            pass
@@ -2664,7 +2713,7 @@ def bot(op):
                                for target in targets:
                                        try:
                                            admin.append(target)
-                                           cl.sendMessage(msg.to,"Berhasil menambahkan admin")
+                                           cl.sendMessage(msg.to,"Berhasil menambahkan admin ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                                        except:
                                            pass
 
@@ -2679,7 +2728,7 @@ def bot(op):
                                for target in targets:
                                        try:
                                            staff.append(target)
-                                           cl.sendMessage(msg.to,"Berhasil menambahkan staff")
+                                           cl.sendMessage(msg.to,"Berhasil menambahkan staff ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                                        except:
                                            pass
 
@@ -2694,7 +2743,7 @@ def bot(op):
                                for target in targets:
                                        try:
                                            Bots.append(target)
-                                           cl.sendMessage(msg.to,"Berhasil menambahkan bot")
+                                           cl.sendMessage(msg.to,"Berhasil menambahkan bot ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                                        except:
                                            pass
 
@@ -2706,10 +2755,10 @@ def bot(op):
                                for x in key["MENTIONEES"]:
                                     targets.append(x["M"])
                                for target in targets:
-                                   if target not in Dpk:
+                                   if target not in Delta:
                                        try:
                                            admin.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
+                                           cl.sendMessage(msg.to,"Berhasil menghapus admin ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                                        except:
                                            pass
 
@@ -2721,10 +2770,10 @@ def bot(op):
                                for x in key["MENTIONEES"]:
                                     targets.append(x["M"])
                                for target in targets:
-                                   if target not in Dpk:
+                                   if target not in Delta:
                                        try:
                                            staff.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
+                                           cl.sendMessage(msg.to,"Berhasil menghapus admin ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                                        except:
                                            pass
 
@@ -2736,10 +2785,10 @@ def bot(op):
                                for x in key["MENTIONEES"]:
                                     targets.append(x["M"])
                                for target in targets:
-                                   if target not in Dpk:
+                                   if target not in Delta:
                                        try:
                                            Bots.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
+                                           cl.sendMessage(msg.to,"Berhasil menghapus admin ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ")
                                        except:
                                            pass
 
@@ -2809,17 +2858,17 @@ def bot(op):
                                     cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
 #===========COMMAND ON OFF============#
-                        elif cmd == "notag on" or text.lower() == 'notag on':
+                        elif cmd == "war mode on" or text.lower() == 'war mode on':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["Mentionkick"] = True
-                                cl.sendText(msg.to,"Notag diaktifkan")
+                                cl.sendText(msg.to,"war mode diaktifkan")
 
-                        elif cmd == "notag off" or text.lower() == 'notag off':
+                        elif cmd == "war mode off" or text.lower() == 'war mode off':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["MentionKick"] = False
-                                cl.sendText(msg.to,"Notag dinonaktifkan")
+                                cl.sendText(msg.to,"war mode dinonaktifkan")
 
                         elif cmd == "contact on" or text.lower() == 'contact on':
                           if wait["selfbot"] == True:
@@ -3002,7 +3051,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"❂-➣ĐPĶ Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
+                                cl.sendMessage(msg.to,"❂-➣ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
 
                         elif cmd == "talkbanlist" or text.lower() == 'talkbanlist':
                           if wait["selfbot"] == True:
@@ -3016,7 +3065,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"❂-➣ĐPĶ Talkban User\n\n"+ma+"\nTotal「%s」Talkban User" %(str(len(wait["Talkblacklist"]))))
+                                cl.sendMessage(msg.to,"❂-➣ᵈᵉˡᵗᵃＰＲＯＴＥＣＴＩＯＮ Talkban User\n\n"+ma+"\nTotal「%s」Talkban User" %(str(len(wait["Talkblacklist"]))))
 
                         elif cmd == "blc" or text.lower() == 'blc':
                           if wait["selfbot"] == True:
